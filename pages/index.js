@@ -4,7 +4,6 @@ import axios from "axios";
 import {  useState } from "react"; 
 import { BsSearch } from "react-icons/bs";
 import Weather from '../Components/Weather';
-import Spinner from '../Components/Spinner';
 
 export default function Home() {
   const [city, setCity] = useState("");
@@ -36,10 +35,7 @@ export default function Home() {
     setCity("");
     setLoading(false);
   };
-  // console.log("weather = ",temp);
-  if(loading){
-    return <Spinner/>
-  }else{
+
 
     return (
       <>
@@ -77,5 +73,5 @@ export default function Home() {
         </div>
       </>
     );
-  }
+  
 }
