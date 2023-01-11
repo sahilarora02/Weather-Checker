@@ -38,7 +38,7 @@ export default function Home() {
   };
   // console.log("weather = ",temp);
   if(loading){
-    return 
+    return <Spinner/>
   }else{
 
     return (
